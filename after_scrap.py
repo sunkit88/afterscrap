@@ -66,4 +66,9 @@ for i in dfmove.index:
     print(move_cmd)
     subprocess.Popen(move_cmd, shell=True)
 
+clean_empty_cmd = 'rclone rmdirs embyjav:scrap --leave-root'
+subprocess.Popen(clean_empty_cmd, shell=True)
+
+
+
 print("Completed")
